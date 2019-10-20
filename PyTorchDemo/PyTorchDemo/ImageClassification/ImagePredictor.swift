@@ -3,7 +3,8 @@ import UIKit
 class ImagePredictor: Predictor {
     private var isRunning: Bool = false
     private lazy var module: VisionTorchModule = {
-        if let filePath = Bundle.main.path(forResource: "mobilenet_quantized", ofType: "pt"),
+//        if let filePath = Bundle.main.path(forResource: "resnet18_float32", ofType: "pt"),
+        if let filePath = Bundle.main.path(forResource: "resnet18_qint8", ofType: "pt"),
             let module = VisionTorchModule(fileAtPath: filePath) {
             return module
         } else {

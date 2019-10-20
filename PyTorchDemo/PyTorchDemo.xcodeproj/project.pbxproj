@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134190CA76AF20963515C2E3 /* libPods-PyTorchDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8006A3A9A03169381A42F019 /* libPods-PyTorchDemo.a */; };
+		5A816C87235C993D00317858 /* resnet18_float32.pt in Resources */ = {isa = PBXBuildFile; fileRef = 5A816C86235C993D00317858 /* resnet18_float32.pt */; };
+		5A816C89235C998600317858 /* resnet18_qint8.pt in Resources */ = {isa = PBXBuildFile; fileRef = 5A816C88235C998600317858 /* resnet18_qint8.pt */; };
 		A01F52AC233C6C32004039FC /* topics.txt in Resources */ = {isa = PBXBuildFile; fileRef = A01F52AB233C6C32004039FC /* topics.txt */; };
 		A01F52AE233C985C004039FC /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F52AD233C985C004039FC /* Predictor.swift */; };
 		A0296C4A2333178500C77366 /* NLPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0296C492333178500C77366 /* NLPViewController.swift */; };
@@ -43,6 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2F3F682470B41AADC4952F /* Pods-PyTorchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyTorchDemo.debug.xcconfig"; path = "Target Support Files/Pods-PyTorchDemo/Pods-PyTorchDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A816C86235C993D00317858 /* resnet18_float32.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = resnet18_float32.pt; sourceTree = "<group>"; };
+		5A816C88235C998600317858 /* resnet18_qint8.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = resnet18_qint8.pt; sourceTree = "<group>"; };
+		8006A3A9A03169381A42F019 /* libPods-PyTorchDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PyTorchDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01F52AB233C6C32004039FC /* topics.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = topics.txt; sourceTree = "<group>"; };
 		A01F52AD233C985C004039FC /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
 		A0296C492333178500C77366 /* NLPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLPViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +87,7 @@
 		A09E1795233990A0002F8F15 /* VisionModelCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisionModelCard.xib; sourceTree = "<group>"; };
 		A0B12D4C2338944900380B1D /* TorchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
 		A0B12D4D2338944900380B1D /* TorchModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		D7BFD6A745C93304D35C7BBF /* Pods-PyTorchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PyTorchDemo.release.xcconfig"; path = "Target Support Files/Pods-PyTorchDemo/Pods-PyTorchDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +95,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				134190CA76AF20963515C2E3 /* libPods-PyTorchDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6482BE1EB9AB01A990D2C92B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E2F3F682470B41AADC4952F /* Pods-PyTorchDemo.debug.xcconfig */,
+				D7BFD6A745C93304D35C7BBF /* Pods-PyTorchDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69644209095A7ABECDB30B5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8006A3A9A03169381A42F019 /* libPods-PyTorchDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0296C482333176500C77366 /* NLP */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +167,8 @@
 			children = (
 				A091B19523303F2D0008A5B8 /* PyTorchDemo */,
 				A091B19423303F2D0008A5B8 /* Products */,
+				6482BE1EB9AB01A990D2C92B /* Pods */,
+				69644209095A7ABECDB30B5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +215,8 @@
 		A091B7582330778B0008A5B8 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				5A816C88235C998600317858 /* resnet18_qint8.pt */,
+				5A816C86235C993D00317858 /* resnet18_float32.pt */,
 				A065C92A2335711B006BEAAD /* words.txt */,
 				A03349BB233D5E7C003425FD /* mobilenet_quantized.pt */,
 			);
@@ -223,6 +253,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A091B1A523303F2D0008A5B8 /* Build configuration list for PBXNativeTarget "PyTorchDemo" */;
 			buildPhases = (
+				47F31052ABCB06FDDACB58C8 /* [CP] Check Pods Manifest.lock */,
 				A091B18F23303F2D0008A5B8 /* Sources */,
 				A091B19023303F2D0008A5B8 /* Frameworks */,
 				A091B19123303F2D0008A5B8 /* Resources */,
@@ -276,6 +307,7 @@
 			files = (
 				A065C92B2335711B006BEAAD /* words.txt in Resources */,
 				A036EA30233B1C0B00054A36 /* NLPModelCard.xib in Resources */,
+				5A816C89235C998600317858 /* resnet18_qint8.pt in Resources */,
 				A03349C0233D6A7E003425FD /* ImageClassificationResultView.xib in Resources */,
 				A091B1A123303F2D0008A5B8 /* LaunchScreen.storyboard in Resources */,
 				A091B19E23303F2D0008A5B8 /* Assets.xcassets in Resources */,
@@ -287,10 +319,36 @@
 				A01F52AC233C6C32004039FC /* topics.txt in Resources */,
 				A03349BC233D5E7C003425FD /* mobilenet_quantized.pt in Resources */,
 				A09E1796233990A0002F8F15 /* VisionModelCard.xib in Resources */,
+				5A816C87235C993D00317858 /* resnet18_float32.pt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47F31052ABCB06FDDACB58C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PyTorchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A091B18F23303F2D0008A5B8 /* Sources */ = {
@@ -460,19 +518,20 @@
 		};
 		A091B1A623303F2D0008A5B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2F3F682470B41AADC4952F /* Pods-PyTorchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J483F464F3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PyTorchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pytorch.mobile.PyTorchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levchik.PyTorchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PyTorchDemo/TorchBridge/PyTorchDemo-Bridging-Header.h";
@@ -484,19 +543,20 @@
 		};
 		A091B1A723303F2D0008A5B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BFD6A745C93304D35C7BBF /* Pods-PyTorchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = J483F464F3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PyTorchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pytorch.mobile.PyTorchDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levchik.PyTorchDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PyTorchDemo/TorchBridge/PyTorchDemo-Bridging-Header.h";
